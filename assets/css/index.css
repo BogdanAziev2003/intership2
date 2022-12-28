@@ -1,0 +1,148 @@
+
+.main__inner{
+    margin-top: 50px;
+}
+
+.main__swiper{
+    border-radius: 30px;
+    height: 600px;
+    position: relative;
+}
+
+.main__scrollbar{
+    width: 300px;
+    height: 5px;
+    position: absolute;
+    z-index: 50;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main__button-prev,
+.main__button-next{
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.main__button-prev{
+    left: 38.23px;
+}
+
+.main__button-next{
+    right: 38.23px;
+}
+
+.main__slide{
+    background-image: url("/assets/images/main.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-weight: 600;
+    padding: 140px 120px;
+}
+
+.main__slide-text{
+    width: 77%;
+    margin-bottom: 70px;
+}
+
+.main__slide-head{
+    font-size: 50px;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+
+.main__slide-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.main__slide-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 259px;
+    height: 62px;
+    background: #FF2E51;
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1150px) {
+    .main__slide-text{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .main__slide-text{
+        width: 100%;
+    }
+
+    .main__swiper{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+
+    .main__swiper{
+        height: 700px;
+        height: max-content;
+    }
+
+    .main__slide{
+        padding: 40px 25px;
+        padding-bottom: 0;
+        font-size: 14px;
+    }
+
+    .main__slide-text{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .main__slide-head{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .main__slide-btn{
+        margin-bottom: 110px;
+    }
+
+    .main__swiper-navigation{
+        width: 100%;
+        display: flex;
+        position: absolute;
+        height: 110px;
+        align-items: center;
+        z-index: 50;
+        bottom: 0;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .main__swiper-buttons{
+        display: flex;
+        gap: 40px;
+        margin-top: 30px;
+    }
+
+    .main__button-prev,
+    .main__button-next,
+    .main__scrollbar{
+        position:static;
+    }
+
+    .main__scrollbar{
+        flex: auto;
+        margin-left: auto;
+        transform: translate(0);
+    }
+
+}
