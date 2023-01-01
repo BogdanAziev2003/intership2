@@ -26,6 +26,11 @@ div{
     z-index: 20;
 }
 
+body{
+    background: #FAF8F5;
+}
+
+
 @media screen and (max-width: 1430px){
     .container{
         padding: 0 20px;
