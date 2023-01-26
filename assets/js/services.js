@@ -1,4 +1,4 @@
-let case_swiper = new Swiper(".services-swiper", {
+let service_swiper = new Swiper(".services-swiper", {
 
     slidesPerView: 'auto',
     keyboardControl: true,

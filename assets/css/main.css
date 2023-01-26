@@ -23,12 +23,14 @@ div{
     max-width: 1430px;
     margin: 0 auto;
     position: relative;
+    overflow-x: hidden;
     z-index: 20;
 }
 
 body{
     background: #FAF8F5;
 }
+
 
 
 @media screen and (max-width: 1430px){

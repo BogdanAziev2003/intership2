@@ -1,6 +1,5 @@
 .services-block__inner{
     margin-top: 120px;
-    margin-bottom: 100px;
 }
 
 .services-block__text{
@@ -120,6 +119,10 @@
 }
 
 @media screen and (max-width: 1430px){
+
+    .services-block__inner{
+        margin-top: 60px;
+    }
     .service__swiper-navigation{
         display: flex;
     }

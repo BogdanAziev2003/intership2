@@ -1,0 +1,222 @@
+.request__inner{
+    margin-top: 120px;
+    padding-bottom: 60px;
+    width: 100%;
+    gap: 10px;
+    position: relative;
+        
+    background: radial-gradient(25.54% 71.56% at 71.36% 78.16%, rgba(211, 229, 207, 0.3) 0%, rgba(211, 229, 207, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(35.81% 100% at 0% 100%, rgba(207, 213, 229, 0.3) 0%, rgba(207, 213, 229, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(60.59% 64.89% at 0% 0%, rgba(255, 181, 61, 0.1) 0%, rgba(255, 181, 61, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFEFC;
+    border-radius: 40px;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+.request__form{
+    width: fit-content;
+    padding-left: 120px;
+    padding-top: 60px;
+    flex-shrink: 1;
+    position: relative;
+    z-index: 3;
+}
+
+.form__text{
+    width: 70%;
+}
+
+.form__head{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+  
+    color: #192040;
+}
+
+.form__description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #828299;
+
+    margin-top: 20px;
+}
+
+.request__image-block{
+    position: relative;
+    width: 590px;
+}
+
+.form__input-list{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.form__input-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.form__input-block label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    width: fit-content;
+    color: #828299;   
+}
+
+.form__input-block input{
+    padding-left: 25px;
+    height: 62px;
+    width: 100%;
+
+    background: #FFFEFC;
+    border: 2px solid #EDEDF2;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828299;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+.request__send-btn{
+    flex: 4;
+    height: 62px;
+    background-color: #FF2E51;
+    border-radius: 50px;
+    cursor:pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.request__send{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 85%;
+}
+
+.request__send-text{
+    flex: 5;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #828299;
+}
+
+.request__first-image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.request__second-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1335px){
+    .request__first-image,
+    .request__second-image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .request__form{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .form__input-block{
+        flex: 1;
+        width: auto;
+    }
+
+    .form__text,
+    .request__send{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .request__inner{
+        margin-top: 60px;
+    }
+    .form__head{
+        font-size: 24px; 
+    }
+    .form__description{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .form__input-list{
+        margin-top: 20px;
+    }
+    .form__input-block label{
+        font-size: 14px;
+    }
+    .request__send{
+        margin-top: 20px;
+    }
+    .request__send-btn{
+        font-size: 14px;
+    }
+    .request__send-text{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+    .request__send,
+    .form__input-list{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .request__form{
+        padding: 30px;
+    }
+
+    .request__send-btn{
+        width: 100%;
+        flex: 60px;
+    }
+    .request__send-text{
+        text-align: center;
+    }
+    .request__inner{
+        padding: 0;
+    }
+
+    .underlined{
+        text-decoration: none;
+    }
+}

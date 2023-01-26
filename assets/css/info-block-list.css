@@ -73,4 +73,10 @@
     .info-block__description{
         font-size: 14px;
     }
+
+    .info-block__image{
+        height: 96px;
+        width: 96px;
+        margin-bottom: 30px;
+    }
 }

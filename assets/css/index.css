@@ -151,3 +151,138 @@
     }
 
 }
+
+
+.popular-products__inner{
+    margin-top: 120px;
+}
+
+.popular-products__head{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+
+    color: #192040;
+    margin-bottom: 50px;
+}
+
+.popular-products__type-list{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.popular-products__type{
+    white-space: nowrap;
+    height: 52px;
+    width:max-content;
+    background: #FFFEFC;
+    border: 2px solid #EDEDF2;
+    border-radius: 50px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #828299;
+}
+
+.red-btn{
+    background: #FF2E51;
+    color: white;
+}
+
+
+@media screen and (max-width: 700px) {
+    .popular-products__head{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    .popular-products__type{
+        height: 40px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .popular-products__type-list-scroll{
+        width: 100%;
+        height:fit-content;
+        overflow: auto;
+    }
+
+    .popular-products__type-list{
+        margin-bottom: 15px;
+    }
+
+    .popular-products__inner{
+        margin-top: 60px;
+    }
+}
+
+
+.place__inner{
+    margin-top: 120px;
+}
+
+.place__text{
+    width: 50%;
+}
+
+.place__head{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+
+    color: #192040;
+}
+
+.place__description{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #828299;
+
+    margin-top: 20px;
+}
+
+.place__list-top,
+.place__list-bot{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.place__list-bot{
+    margin-top: 30px;
+}
+
+.place__list-top{
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .place__list-top,
+    .place__list-bot{
+        flex-direction: column;
+    }
+
+    .place__text{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .place{
+        display: none;
+    }
+}
