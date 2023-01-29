@@ -1,16 +1,17 @@
 .products-swiper{
     width: 100%;
-    height: 437px;
 }
 
 .swiper.products-swiper{
     overflow: visible;
 }
-
+.popular-products__wrapper{
+    overflow-x:hidden;
+    overflow-y:visible !important;
+}
 
 .product__swiper-navigation{
     display: flex;
-    height: 88px;
     align-items: center;
     gap: 50px;
     flex: 1;
@@ -40,6 +41,8 @@
 }
 
 .product__navigation-bottom{
+    margin-top: 44px;
+    padding-bottom: 44px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
