@@ -1,0 +1,174 @@
+.footer__inner{
+    border-top: 1px solid #D2D2D9;
+    border-bottom: 1px solid #D2D2D9;
+    padding: 60px 0;
+    margin-top: 120px;
+
+    width: 100%;
+}
+
+.footer__main{
+    display: flex;
+}
+
+.footer__catalog{
+    flex: 1;
+}
+
+.footer__services{
+    flex: 1;
+}
+
+.footer__nav-and-contacts{
+    display: flex;
+    flex: 1;
+}
+
+.footer__head{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+
+    color: #192040;
+}
+
+.footer__catalog-list{
+    margin-top: 30px;
+    display: flex;
+    gap: 60px;
+}
+
+.footer__catalog-side{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    line-height: 140%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #828299;
+}
+
+.footer__services-list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    line-height: 140%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #828299;
+}
+
+.footer__services-inner{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.footer__nav{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    color: #192040;
+}
+
+.footer__contacts{
+    flex: 1;
+    display: flex;  
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.menu__contats-list_footer{
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+
+.footer__icons{
+    display: flex;
+    gap: 15px;
+}
+
+@media screen and (max-width: 920px) {
+    .footer__main{
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .footer__services{
+        min-width: 300px;
+    }
+
+    .footer__services-inner{
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .footer__inner{
+        margin-top: 60px;
+    }
+
+    .footer__head{
+        font-size: 16px;
+    }
+
+    .footer__services-list,
+    .footer__catalog-side{
+        font-size: 14px;
+        gap: 0;
+    }
+
+    .footer__nav{
+        font-size: 16px;
+        gap: 20px;
+    }
+
+    .menu__contats-list_footer{
+        gap: 20px;
+    }
+
+    .menu__contats-list_footer .contact__phone .contact__link{
+        font-size: 18px;
+    }
+    .menu__contats-list_footer .contact__email .contact__link{
+        font-size: 16px;
+    }
+
+    .menu__contats-list_footer .contact{
+        gap: 5px;
+        height: fit-content;
+    }
+    .menu__contats-list_footer .contact__link{
+        margin: 0;
+    }
+
+    .footer__services-list,
+    .footer__catalog-list{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    
+    .footer__catalog-list{
+        gap: 20px;
+    }
+
+    .footer__services{
+        min-width: none;
+    }
+}
