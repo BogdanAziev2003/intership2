@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Gilroy';
 }
+body{
+    font-family: 'Gilroy';
+
+}
 
 a{
     text-decoration: none;
