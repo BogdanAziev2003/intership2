@@ -6,11 +6,11 @@ let blogSwiper = new Swiper(".blog-box__list", {
     loop: true,
     spaceBetween: 10,
     navigation: {
-        prevEl: '.blog-box__arrow-prev',
-        nextEl: '.blog-box__arrow-next',
+        prevEl: '.blog-prev',
+        nextEl: '.blog-next',
       },
     
       scrollbar: {
-        //  el: '.blog-box__skrollbar',
+        el: '.blog-scrollbar',
       },
 });

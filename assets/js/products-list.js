@@ -3,14 +3,14 @@ let product_swiper = new Swiper(".products-swiper", {
     slidesPerView: 'auto',
     keyboardControl: true,
     spaceBetween: 10,
-    loop: true,
+    loop: false,
     navigation: {
-        prevEl: '.product__swiper-prev',
-        nextEl: '.product__swiper-next',
+        prevEl: '.product-prev',
+        nextEl: '.product-next',
       },
     
       // And if we need scrollbar
       scrollbar: {
-         el: '.service__scrollbaar',
+         el: '.product-scrollbar',
       },
 });

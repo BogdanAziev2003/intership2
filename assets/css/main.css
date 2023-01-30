@@ -34,6 +34,17 @@ body{
     background: #FAF8F5;
 }
 
+.wrapper{
+    position: relative;
+    z-index: 10;
+}
+
+.btn:hover{
+    background: #FA052E;
+    box-shadow: 0px 15px 20px -15px #FF0D35;
+}
+
+
 @media screen and (max-width: 1430px){
     .container{
         padding: 0 20px;
